@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"></ImageView>
+
+    <ImageView
+        android:id="@+id/maskImage"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:baselineAlignBottom="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/rectanglefilled" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Dorucak"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"></TextView>
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Maxi" />
+
+    </LinearLayout>
+
+</FrameLayout>
